@@ -31,4 +31,23 @@ func main() {
 	fmt.Println(slice2)
 
 	fmt.Println(reflect.TypeOf(slice))
+
+	// Arrays internos
+	slice3 := make([]float32, 10, 12)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // tamanho
+	fmt.Println(cap(slice3)) // capacidade
+
+	slice3 = append(slice3, 100)
+	slice3 = append(slice3, 111)
+
+	fmt.Println(len(slice3)) // tamanho
+	fmt.Println(cap(slice3)) // capacidade
+
+	slice4 := make([]float32, 5)
+	fmt.Println(slice4)
+
+	slice4 = append(slice4, 10)
+	fmt.Println(len(slice4)) // tamanho
+	fmt.Println(cap(slice4)) // capacidade
 }
