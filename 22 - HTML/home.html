@@ -23,5 +23,14 @@
     <marquee>
         <h4>Seja bem vindo {{ . Nome}}!</h4>
     </marquee>
+
+    <button id="botao">Clique aqui</button>
+    <script>
+        var botao = document.getElementById("botao")
+        botao.onclick = function(){
+            alert("Você clicou aqui")
+        }
+    </script>
 </body>
+
 </html>
